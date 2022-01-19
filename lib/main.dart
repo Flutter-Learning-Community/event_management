@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'event_details.dart';
+import 'Homescreen_Page.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(homepage());
+}
 
-class MyApp extends StatelessWidget {
+class homepage extends StatelessWidget {
+  const homepage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: Home_Screen(),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: user_detail(),
-      ),
     );
   }
 }
